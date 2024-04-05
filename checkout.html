@@ -1,0 +1,486 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assests/images/joybox-logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assests/images/joybox-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assests/images/joybox-logo.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <title>JOYBOX</title>
+  <style>
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+<body class="font-montserrat">
+  <header class="bg-[#F14530] hidden sm:hidden md:block lg:block">
+    <nav>
+      <ul class="flex justify-end py-2 px-12 text-sm">
+        <li class="dropdown inline-block relative text-white border-r-2">
+          <span class="mr-1 hover:text-[#F5D547]"><a href="">Membership</a></span>
+        </li>&nbsp;&nbsp;
+        <li class="dropdown inline-block relative  border-r-2">
+          <button class="bg-transparent rounded inline-flex items-center">
+            <span class="mr-1 text-white hover:text-[#F5D547]"><a href="">Deals</a></span>
+            <svg class="fill-current h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
+          </button>
+          <ul class="dropdown-menu absolute hidden pt-1 bg-white">
+            <li class=""><a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#">Deals1</a></li>
+            <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">deal2</a></li>
+            <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Deal3</a></li>
+          </ul>
+        </li>&nbsp;&nbsp;
+        <svg width="19" height="25" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4.76945 0.67627C4.8538 0.678802 4.93858 0.683868 5.02293 0.683868C9.07779 0.68429 13.1326 0.685134 17.1875 0.683446C17.7229 0.683023 18.1819 0.853136 18.5486 1.2495C18.8326 1.55638 18.9784 1.92025 18.9987 2.33519C19.0009 2.3774 18.9996 2.41961 18.9996 2.46182C18.9996 5.48671 18.9987 8.51159 19 11.5365C19.0004 12.23 18.7003 12.7513 18.1018 13.0992C17.8212 13.2625 17.5105 13.3153 17.1871 13.3149C15.2092 13.3132 13.231 13.314 11.2532 13.314C9.16935 13.314 7.08512 13.314 5.00131 13.3144C4.92374 13.3144 4.8466 13.3195 4.76902 13.3225C4.76097 13.2465 4.74656 13.1705 4.74656 13.0941C4.74529 9.0308 4.74529 4.9675 4.74656 0.904212C4.74698 0.828231 4.7614 0.75225 4.76945 0.67627ZM9.79415 3.45506C9.76151 3.45928 9.72294 3.45422 9.69665 3.46941C8.46231 4.18279 7.76757 5.24737 7.63235 6.66146C7.57979 7.21232 7.6599 7.75263 7.84387 8.27816C8.4958 10.141 10.4342 11.287 12.4447 10.8666C13.6243 10.6196 14.5162 9.9489 15.1198 8.90585C15.141 8.86913 15.152 8.82607 15.1724 8.77457C15.1431 8.78048 15.1346 8.78006 15.1291 8.78386C15.1007 8.80412 15.0723 8.8248 15.0448 8.84633C14.0245 9.64709 12.8847 9.90289 11.627 9.56646C10.1612 9.17432 8.95529 7.8666 8.87093 6.1144C8.82558 5.17434 9.11424 4.32926 9.70683 3.59098C9.74031 3.54919 9.76363 3.49896 9.7916 3.45253C9.8039 3.44451 9.81619 3.43691 9.82848 3.42889C9.8234 3.42551 9.81831 3.42214 9.81322 3.41876C9.80644 3.431 9.80008 3.44324 9.79415 3.45506ZM13.384 3.60956C13.373 3.61504 13.3615 3.62095 13.3505 3.62644C13.3878 3.89913 13.4251 4.17224 13.4637 4.45632C13.2123 4.59182 12.9665 4.72437 12.6765 4.88055C12.9966 4.93838 13.2691 4.98734 13.5553 5.03884C13.6061 5.31871 13.6566 5.59561 13.7155 5.9198C13.8715 5.62938 14.0058 5.37949 14.1372 5.13424C14.4234 5.14268 14.6832 5.24779 14.988 5.21107C14.7773 4.99072 14.5904 4.79528 14.4094 4.60575C14.5209 4.33897 14.6713 4.11188 14.7769 3.81217C14.4874 3.95189 14.2441 4.06924 13.9893 4.19208C13.785 3.99579 13.5845 3.80246 13.384 3.60956Z"
+            fill="#014610" />
+          <path
+            d="M4.7692 0.676349C4.76157 0.75233 4.74674 0.828734 4.74674 0.904714C4.74547 4.96801 4.74547 9.0313 4.74674 13.0946C4.74674 13.1706 4.76157 13.2466 4.7692 13.323C4.38093 13.3259 3.99265 13.3301 3.60438 13.331C3.03934 13.3322 2.47431 13.3373 1.90969 13.3284C1.64604 13.3242 1.38111 13.3035 1.13018 13.206C0.571923 12.9895 0.204841 12.5978 0.0450373 12.022C0.0119745 11.9034 0.00180129 11.7751 0.00180129 11.6514C-0.000318121 8.53616 -0.000318121 5.42052 0.000529643 2.3053C0.000529643 1.9026 0.159485 1.56406 0.431194 1.27153C0.668568 1.01573 0.938157 0.812693 1.28998 0.745999C1.45996 0.713496 1.63205 0.67255 1.80372 0.671284C2.76424 0.664108 3.72433 0.667907 4.68485 0.668751C4.71283 0.668751 4.7408 0.673395 4.7692 0.676349Z"
+            fill="#EFEFEF" />
+          <path
+            d="M9.79083 3.45264C9.76285 3.49907 9.73954 3.5493 9.70605 3.59109C9.11346 4.32937 8.8248 5.17487 8.87016 6.1145C8.95451 7.86671 10.1609 9.17442 11.6262 9.56657C12.8839 9.903 14.0237 9.64677 15.044 8.84644C15.0716 8.82491 15.1 8.80423 15.1284 8.78397C15.1334 8.78017 15.1419 8.78059 15.1716 8.77468C15.1512 8.82618 15.1406 8.86881 15.119 8.90596C14.5154 9.94943 13.6236 10.6202 12.4439 10.8667C10.4334 11.2871 8.49502 10.1415 7.84309 8.27827C7.65912 7.75316 7.57901 7.21243 7.63157 6.66157C7.76679 5.24705 8.46153 4.18248 9.69588 3.46952C9.72216 3.45433 9.76073 3.45939 9.79337 3.45517L9.79083 3.45264Z"
+            fill="#EEEFEF" />
+          <path
+            d="M13.3837 3.60986C13.5842 3.80319 13.7847 3.9961 13.989 4.19281C14.2438 4.06997 14.4871 3.95262 14.7766 3.8129C14.6711 4.1126 14.5206 4.3397 14.4091 4.60648C14.5901 4.79559 14.7775 4.99145 14.9877 5.2118C14.6829 5.2481 14.4235 5.14299 14.137 5.13497C14.0051 5.38022 13.8708 5.63053 13.7152 5.92053C13.6563 5.59634 13.6058 5.31943 13.555 5.03957C13.2689 4.98807 12.9959 4.93869 12.6763 4.88128C12.9662 4.72509 13.2121 4.59255 13.4634 4.45705C13.4248 4.17297 13.3875 3.89986 13.3502 3.62717C13.3613 3.62126 13.3723 3.61535 13.3837 3.60986Z"
+            fill="#E9ECEA" />
+          <path
+            d="M9.79398 3.45525C9.80034 3.44301 9.80628 3.43119 9.81263 3.41895C9.81772 3.42232 9.82281 3.4257 9.82789 3.42908C9.8156 3.4371 9.80331 3.44469 9.79102 3.45271L9.79398 3.45525Z"
+            fill="#EEEFEF" />
+        </svg>
+
+        <li class="dropdown inline-block relative">
+          <button class="bg-transparent rounded inline-flex items-center">
+            <span class="mr-1 text-white hover:text-[#F5D547]"><a href="">/ &nbsp;English / &nbsp;USD</a></span>
+            <svg class="fill-current h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
+          </button>
+          <ul class="dropdown-menu absolute hidden pt-1 bg-white">
+            <li class=""><a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#">Deals1</a></li>
+            <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">deal2</a></li>
+            <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Deal3</a></li>
+          </ul>
+        </li>&nbsp;&nbsp;
+        <li class="dropdown inline-block relative">
+          <button class="bg-transparent rounded inline-flex items-center">
+            <span class="mr-1 text-white hover:text-[#F5D547]"><a href="">Help</a></span>
+            <svg class="fill-current h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
+          </button>
+          <ul class="dropdown-menu absolute hidden pt-1 bg-white">
+            <li class=""><a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#">Help1</a></li>
+            <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">Help2</a></li>
+            <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Help3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="max-w-[1200px]">
+    <main>
+      <!-- navbar starts -->
+      <header class="pt-12 px-24">
+        <nav class="flex flex-wrap items-center justify-between w-full md:py-0">
+          <div>
+            <a href="#" class="flex">
+              <img src="assests/images/joybox-logo.png" class="hidden lg:block md:hidden min-[40px]:hidden">
+              <img src="assests/images/company-blacklogo.svg" class="hidden lg:hidden md:block min-[40px]:block">
+            </a>
+          </div>
+          <a href="#">
+            <svg xmlns="<http://www.w3.org/2000/svg>" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </a>
+          <div class="hidden w-full md:flex md:items-center md:w-auto " id="menu">
+            <ul class="text-base text-gray-700 pt-4 md:flex md:justify-between md:pt-0">
+              <li>
+                <a class="md:p-4 py-2 block hover:text-[#F14530]" href="#"><i class="fa fa-question-circle"
+                    aria-hidden="true"></i> Help</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- navbar ends -->
+      <!-- checkout and order screen starts -->
+      <div class="pt-10 lg:flex">
+        <!-- Checkout starts -->
+        <div class="lg:px-20 min-[300px]:px-10">
+          <div class="lg:w-[580px] min-[300px]:w-[330px]">
+            <h1 class="lg:text-2xl bg-[#F5D547] text-center rounded-[5px]">Checkout</h1>
+            <div class="flex justify-between pt-4 text-lg">
+              <h1>Contact</h1>
+              <h1 class="text-gray-400">Have an account? <a href=""><span class="text-[#F14530]">Log in</span></a></h1>
+            </div>
+          </div>
+          <div class="py-2">
+            <form>
+              <input type="email" placeholder="Email" class="border lg:w-[580px] rounded-[8px] px-2 py-2 min-[300px]:w-[330px]">
+              <h1 class="pt-2 text-sm"><i class="fa fa-check-circle" aria-hidden="true"></i><span class="text-gray-400 pl-2">Email me with news and offers</span></h1>
+            </form>
+          </div>
+          <div class="flex justify-between pt-4 text-lg">
+            <h1>Shipping Address</h1>
+          </div>
+          <div class="py-2">
+            <form>
+              <div>
+                <input type="text" placeholder="Address Title (Optional)" class="border lg:w-[580px] min-[300px]:w-[330px] rounded-[8px] px-2 py-2">
+                <h1 class="pb-2 text-sm"><span class="text-gray-400 lg:pl-2">For estimating if the place is opened or closed on the weekends.</span></h1>
+              </div>
+             <div class="flex border min-[300px]:w-[330px] lg:w-[580px] rounded-[8px] px-2 py-2 justify-between"> 
+              <input type="text" placeholder="Address*" required class="w-[580px]">
+              <i class="fa-solid fa-location-crosshairs text-[#DC1F1F]"></i>
+             </div>
+             <a href="">
+              <h1 class="pb-2 text-sm"><i class="fa fa-plus text-[#DC1F1F]" aria-hidden="true"></i><span class="text-[#DC1F1F] pl-2">Street Address 2 (Optional)</span></h1>
+             </a>
+             <div class="border w-[280px] rounded-[8px]">
+              <li class="dropdown inline-block relative">
+                <div class="bg-transparent rounded flex items-center justify-between">
+                <a href="" class="px-2 py-2 text-gray-400">City*</a>
+                <p class="px-52">
+                  <svg class="fill-current h-4 w-4 text-[#DC1F1F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </p>
+                </div>
+                <ul class="dropdown-menu absolute hidden pt-1 bg-white">
+                  <li class=""><a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#">Karachi</a></li>
+                  <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">Islamabad</a></li>
+                  <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Lahore</a></li>
+                </ul>
+              </li>
+             </div>
+             <div class="pt-2">
+              <div class="border w-[280px] rounded-[8px]">
+                <li class="dropdown inline-block relative">
+                  <div class="bg-transparent rounded flex items-center justify-between">
+                  <a href="" class="px-2 py-2 text-gray-400">Country*</a>
+                  <p class="px-[178px]">
+                    <svg class="fill-current h-4 w-4 text-[#DC1F1F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </p>
+                  </div>
+                  <ul class="dropdown-menu absolute hidden pt-1 bg-white">
+                    <li class=""><a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#">Karachi</a></li>
+                    <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">Islamabad</a></li>
+                    <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Lahore</a></li>
+                  </ul>
+                </li>
+               </div>
+             </div>
+             <div class="pt-2 flex">
+              <div class="border w-[100px] rounded-[8px]">
+                <li class="dropdown inline-block relative">
+                  <div class="bg-transparent rounded flex items-center justify-between min-[300px]:w-[90px]">
+                    <svg width="19" height="25" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.76945 0.67627C4.8538 0.678802 4.93858 0.683868 5.02293 0.683868C9.07779 0.68429 13.1326 0.685134 17.1875 0.683446C17.7229 0.683023 18.1819 0.853136 18.5486 1.2495C18.8326 1.55638 18.9784 1.92025 18.9987 2.33519C19.0009 2.3774 18.9996 2.41961 18.9996 2.46182C18.9996 5.48671 18.9987 8.51159 19 11.5365C19.0004 12.23 18.7003 12.7513 18.1018 13.0992C17.8212 13.2625 17.5105 13.3153 17.1871 13.3149C15.2092 13.3132 13.231 13.314 11.2532 13.314C9.16935 13.314 7.08512 13.314 5.00131 13.3144C4.92374 13.3144 4.8466 13.3195 4.76902 13.3225C4.76097 13.2465 4.74656 13.1705 4.74656 13.0941C4.74529 9.0308 4.74529 4.9675 4.74656 0.904212C4.74698 0.828231 4.7614 0.75225 4.76945 0.67627ZM9.79415 3.45506C9.76151 3.45928 9.72294 3.45422 9.69665 3.46941C8.46231 4.18279 7.76757 5.24737 7.63235 6.66146C7.57979 7.21232 7.6599 7.75263 7.84387 8.27816C8.4958 10.141 10.4342 11.287 12.4447 10.8666C13.6243 10.6196 14.5162 9.9489 15.1198 8.90585C15.141 8.86913 15.152 8.82607 15.1724 8.77457C15.1431 8.78048 15.1346 8.78006 15.1291 8.78386C15.1007 8.80412 15.0723 8.8248 15.0448 8.84633C14.0245 9.64709 12.8847 9.90289 11.627 9.56646C10.1612 9.17432 8.95529 7.8666 8.87093 6.1144C8.82558 5.17434 9.11424 4.32926 9.70683 3.59098C9.74031 3.54919 9.76363 3.49896 9.7916 3.45253C9.8039 3.44451 9.81619 3.43691 9.82848 3.42889C9.8234 3.42551 9.81831 3.42214 9.81322 3.41876C9.80644 3.431 9.80008 3.44324 9.79415 3.45506ZM13.384 3.60956C13.373 3.61504 13.3615 3.62095 13.3505 3.62644C13.3878 3.89913 13.4251 4.17224 13.4637 4.45632C13.2123 4.59182 12.9665 4.72437 12.6765 4.88055C12.9966 4.93838 13.2691 4.98734 13.5553 5.03884C13.6061 5.31871 13.6566 5.59561 13.7155 5.9198C13.8715 5.62938 14.0058 5.37949 14.1372 5.13424C14.4234 5.14268 14.6832 5.24779 14.988 5.21107C14.7773 4.99072 14.5904 4.79528 14.4094 4.60575C14.5209 4.33897 14.6713 4.11188 14.7769 3.81217C14.4874 3.95189 14.2441 4.06924 13.9893 4.19208C13.785 3.99579 13.5845 3.80246 13.384 3.60956Z"
+                        fill="#014610" />
+                      <path
+                        d="M4.7692 0.676349C4.76157 0.75233 4.74674 0.828734 4.74674 0.904714C4.74547 4.96801 4.74547 9.0313 4.74674 13.0946C4.74674 13.1706 4.76157 13.2466 4.7692 13.323C4.38093 13.3259 3.99265 13.3301 3.60438 13.331C3.03934 13.3322 2.47431 13.3373 1.90969 13.3284C1.64604 13.3242 1.38111 13.3035 1.13018 13.206C0.571923 12.9895 0.204841 12.5978 0.0450373 12.022C0.0119745 11.9034 0.00180129 11.7751 0.00180129 11.6514C-0.000318121 8.53616 -0.000318121 5.42052 0.000529643 2.3053C0.000529643 1.9026 0.159485 1.56406 0.431194 1.27153C0.668568 1.01573 0.938157 0.812693 1.28998 0.745999C1.45996 0.713496 1.63205 0.67255 1.80372 0.671284C2.76424 0.664108 3.72433 0.667907 4.68485 0.668751C4.71283 0.668751 4.7408 0.673395 4.7692 0.676349Z"
+                        fill="#EFEFEF" />
+                      <path
+                        d="M9.79083 3.45264C9.76285 3.49907 9.73954 3.5493 9.70605 3.59109C9.11346 4.32937 8.8248 5.17487 8.87016 6.1145C8.95451 7.86671 10.1609 9.17442 11.6262 9.56657C12.8839 9.903 14.0237 9.64677 15.044 8.84644C15.0716 8.82491 15.1 8.80423 15.1284 8.78397C15.1334 8.78017 15.1419 8.78059 15.1716 8.77468C15.1512 8.82618 15.1406 8.86881 15.119 8.90596C14.5154 9.94943 13.6236 10.6202 12.4439 10.8667C10.4334 11.2871 8.49502 10.1415 7.84309 8.27827C7.65912 7.75316 7.57901 7.21243 7.63157 6.66157C7.76679 5.24705 8.46153 4.18248 9.69588 3.46952C9.72216 3.45433 9.76073 3.45939 9.79337 3.45517L9.79083 3.45264Z"
+                        fill="#EEEFEF" />
+                      <path
+                        d="M13.3837 3.60986C13.5842 3.80319 13.7847 3.9961 13.989 4.19281C14.2438 4.06997 14.4871 3.95262 14.7766 3.8129C14.6711 4.1126 14.5206 4.3397 14.4091 4.60648C14.5901 4.79559 14.7775 4.99145 14.9877 5.2118C14.6829 5.2481 14.4235 5.14299 14.137 5.13497C14.0051 5.38022 13.8708 5.63053 13.7152 5.92053C13.6563 5.59634 13.6058 5.31943 13.555 5.03957C13.2689 4.98807 12.9959 4.93869 12.6763 4.88128C12.9662 4.72509 13.2121 4.59255 13.4634 4.45705C13.4248 4.17297 13.3875 3.89986 13.3502 3.62717C13.3613 3.62126 13.3723 3.61535 13.3837 3.60986Z"
+                        fill="#E9ECEA" />
+                      <path
+                        d="M9.79398 3.45525C9.80034 3.44301 9.80628 3.43119 9.81263 3.41895C9.81772 3.42232 9.82281 3.4257 9.82789 3.42908C9.8156 3.4371 9.80331 3.44469 9.79102 3.45271L9.79398 3.45525Z"
+                        fill="#EEEFEF" />
+                    </svg>
+                  <a href="" class="px-2 py-2 text-gray-400">+ 92</a>
+                  <p>
+                    <svg class="fill-current h-4 w-4 text-[#DC1F1F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </p>
+                  </div>
+                  <ul class="dropdown-menu absolute hidden pt-1 bg-white">
+                    <li class=""><a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#">+ 93</a></li>
+                    <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">+ 94</a></li>
+                    <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">+ 95</a></li>
+                  </ul>
+                </li>
+               </div>
+               <div class="px-2">
+                <input type="text" placeholder="Phone" class="border lg:w-[410px] rounded-[8px] px-2 py-2">
+                <i class="fa-sharp fa-solid fa-square-plus text-gray-300"></i>
+              </div>
+             </div>
+             <a>
+              <h1 class="pt-2 text-sm"><i class="fa fa-check-circle" aria-hidden="true"></i><span class="text-gray-400 pl-2">Save this information for next time</span></h1>
+             </a>
+             <!-- radio buttons --> 
+            <div>
+              <div class="inline-flex items-center">
+                <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="react">
+                  <div class="flex">
+                    <img src="assests/images/Debit.png" class="">
+                  <h1 class="pl-8">Debit Card</h1>
+                  </div>
+                </label>
+                <div class="pl-[155px]">
+                  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="react">
+                    <input name="type" type="radio"
+                      class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
+                      id="react" checked />
+                    <span
+                      class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                        <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div> 
+            <div>
+              <div class="inline-flex items-center">
+                <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="react">
+                  <div class="flex">
+                    <img src="assests/images/jazz_cash.png" class="">
+                  <h1 class="pl-8">Jazz Cash</h1>
+                  </div>
+                </label>
+                <div class="pl-[162px]">
+                  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="react">
+                    <input name="type" type="radio"
+                      class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
+                      id="react" checked />
+                    <span
+                      class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                        <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="inline-flex items-center">
+                <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="react">
+                  <div class="flex">
+                    <img src="assests/images/Cash_on_delivery.png" class="">
+                  <h1 class="pl-8">Cash on Delivery</h1>
+                  </div>
+                </label>
+                <div class="pl-[117px]">
+                  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="react">
+                    <input name="type" type="radio"
+                      class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
+                      id="react" checked />
+                    <span
+                      class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                        <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="inline-flex items-center">
+                <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="react">
+                  <div class="flex">
+                    <img src="assests/images/easypaisa.png" class="">
+                  <h1 class="pl-8">Easypaisa</h1>
+                  </div>
+                </label>
+                <div class="pl-[180px]">
+                  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="react">
+                    <input name="type" type="radio"
+                      class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
+                      id="react" checked />
+                    <span
+                      class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                        <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="inline-flex items-center">
+                <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="react">
+                  <div class="flex">
+                    <img src="assests/images/wallet_radio.png" class="">
+                  <h1 class="pl-8">Wallet</h1>
+                  </div>
+                </label>
+                <div class="pl-[195px]">
+                  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="react">
+                    <input name="type" type="radio"
+                      class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
+                      id="react" checked />
+                    <span
+                      class="absolute text-gray-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                        <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+             <!-- radio buttons -->
+             <!-- Add Credit / Debit Card -->
+             <div>
+              <div class="pt-8 flex">
+                <img src="assests/images/calendar.png" class="w-6 h-6">
+                <h1 class="px-6 text-gray-600">Add Credit / Debit Card</h1>
+               </div>
+               <div class="pt-4">
+                <input type="text" placeholder="Card Holder’s Name" class="border w-[300px] rounded-[8px] px-2 py-2">
+              </div>
+              <div class="pt-2">
+                <div class="flex border w-[300px] rounded-[8px] px-2 py-1 justify-between"> 
+                  <input type="number" placeholder="Card Number" maxlength="14" required class="w-[300px]">
+                  <img src="assests/images/master_card.png" alt="">
+                 </div>
+              </div>
+              <div class="pt-4">
+                <h1 class="text-gray-600">Expire Date</h1>
+               </div>
+               <div class="flex">
+                  <div class="flex border lg:w-[200px] min-[300px]:w-[120px] rounded-[8px] px-2 py-1 justify-between"> 
+                    <input type="text" placeholder="Card Number" required class="lg:w-[300px] min-[300px]:w-[100px]">
+                  <div class="pt-2 flex">
+                 </div>
+                </div>
+              <div class="px-4">
+                <div class="flex border lg:w-[200px] min-[300px]:w-[120px] rounded-[8px] px-2 py-1 justify-between"> 
+                  <input type="text" placeholder="Card Number" required class="lg:w-[300px] min-[300px]:w-[100px]">
+                 </div>
+              </div>
+              </div>
+                <div class="pt-4">
+                  <div class="flex border w-[250px] rounded-[8px] px-2 py-3 justify-between"> 
+                    <input type="text" placeholder="Security Code" required class="w-[300px]">
+                    <i class="fa fa-info-circle text-[#DC1F1F] " aria-hidden="true"></i>
+                   </div>
+                   <h1 class="pt-2 text-sm"><i class="fa fa-check-circle" aria-hidden="true"></i><span class="text-gray-400 pl-2">Remember my card for next purchases.</span></h1>
+                </div>
+             </div>
+             <!-- Add Credit / Debit Card -->
+            </form>
+          </div>
+        </div>
+        <!-- Checkout ends -->
+        <div class="lg:px-20 min-[300px]:px-10">
+          <div class="lg:w-[580px] min-[300px]:w-[330px]">
+            <h1 class="lg:text-2xl bg-[#F5D547] text-center rounded-[5px]">Your order</h1>
+          </div>
+         <div>
+          <table>
+            <tbody>
+              <td>
+                <div class="flex w-28">
+                  <img src="assests/images/product_card.png" class="lg:w-[130px] lg:h-[110px] z-0">
+                  <img src="assests/images/Krunch_chicken_combo.png" class="lg:w-[70px] lg:h-[70px] z-40 lg:ml-[-90px] lg:mt-[10px] min-[300px]:w-12 min-[300px]:h-12 min-[300px]:ml-[-65px] min-[300px]:mt-[6px]">
+                </div>
+              </td>
+              <td class="lg:w-[330px] min-[300px]:text-sm">
+                <h1 class="font-bold">Krunch Chicken Combo</h1>
+                <p>1 Krunch burger + 1 pc of Hot and Crispy Fried
+                  Chicken + 1 Regular drink</p>
+              </td>
+              <td class="lg:w-[330px] min-[300px]:text-sm">Rs. 1,300.00</td>
+            </tbody>
+            <tbody>
+              <td>
+                <div class="flex">
+                  <img src="assests/images/product_card.png" class="w-[130px] h-[110px] z-0">
+                  <img src="assests/images/Krunch_burger.png" class="w-[70px] h-[70px] z-40 ml-[-90px] mt-[10px]">
+                </div>
+              </td>
+              <td class="w-[340px]">
+                <h1 class="font-bold">Krunch Burger</h1>
+                <p>Krunch fillet, spicy mayo, lettuce, sandwiched
+                  between a sesame seed bun</p>
+              </td>
+              <td>Rs. 1,300.00</td>
+            </tbody>
+          </table>
+         </div>
+         <div class="py-4"><hr></div>
+         <div class="flex justify-between pt-4 text-lg">
+          <h1>Subtotal</h1> 
+          <h1><a href="">Rs. 1,570.00</a></h1>
+         </div>
+         <div class="flex justify-between pt-4 text-lg">
+          <h1>Delivery charges</h1> 
+          <h1>Rs. 250.00</h1>
+         </div>
+         <div class="flex justify-between pt-4 text-lg text-[#F14530]">
+          <h1>Wallet Redeem</h1> 
+          <h1>Rs. 250.00</h1>
+         </div>
+         <div class="pt-4 pb-8"><hr></div>
+         <div class="flex justify-between pt-4 text-lg font-semibold">
+          <h1>Total</h1> 
+          <h1>Rs. 1,570.00</h1>
+         </div>
+         <div class="flex pt-4 justify-center">
+          <div>
+            <button type="button" class="border border-[#F5D83E] hover:bg-[#F5D547] rounded-full  w-[178px] h-[51px]">Procced to pay</button>
+           </div>
+           <div class="pl-4">
+            <button type="button" class="border border-[#F5D83E] hover:bg-[#F5D547] rounded-full w-[178px] h-[51px]">Continue shopping</button>
+           </div>
+         </div>
+         <div class="flex pt-4 justify-center">
+          <div>
+            <button type="button" class="border border-[#F5D83E] hover:bg-[#F5D547] rounded-full w-[109px] h-[51px]">Back</button>
+           </div>
+         </div>
+        </div>
+      </div>
+    <!-- checkout and order screen ends -->
+      </main>
+    
+      <!-- footer -->
+      <footer class="pt-12">
+        <div class="bg-[url(assests/images/footer-yellowbg.png)] px-[10px]  pt-[3rem] bg-cover w-full max-w-[1300px] mr-auto ml-auto lg:px-12 lg:pt-12 pb-[20px]">
+            <div class="flex justify-between items-start">
+                <div class="max-w-[380px]">
+                    <img class="w-full max-w-[50px] md:max-w-[70px] lg:max-w-[95px] mb-[15px]" src="assests/images/company-blacklogo.svg">
+                    <p class="lg:text-[11px] tracking-[-0.03rem] text-[7px] mb-[10px] sm:text-[10px] md:text-[13px] leading-[1.3]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
+                    <p class="text-[11px] tracking-[-0.03rem] mb-[10px] hidden leading-[1.3] lg:block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
+                   
+                 <div class="w-full lg:p-[10px]  flex item-center gap-[10px] ">
+                    <i class="fa-brands fa-square-facebook text-[20px]  lg:text-[25px]"></i>
+                    <i class="fa-brands fa-square-instagram text-[20px] lg:text-[25px]"></i>
+                 </div>
+                </div>
+                    <img class="w-full max-w-[100px] sm:max-w-[150px] lg:max-w-[246px] object-contain" src="assests/images/footer-logo.png">
+            </div>
+            <p class="text-center text-[9px] sm:text-[10px] lg:text-[14px] font-[400]" >© 2023 JOYBOX</p>
+         
+        </div>
+    </footer>
+  </div>
+  <script src="assests/js/scripit.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

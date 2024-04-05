@@ -1,0 +1,483 @@
+<!doctype html>
+<html>
+<head>
+  <title>JOYBOX</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="apple-touch-icon" sizes="180x180" href="assests/images/joybox-logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assests/images/joybox-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assests/images/joybox-logo.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  </style>
+  <body class="font-montserrat">
+    <header class="bg-[#F14530]">
+      <nav>
+  <ul class="flex justify-end py-2 px-2 text-sm">
+    <li class="dropdown inline-block relative text-white border-r-2">
+        <span class="mr-1 hover:text-[#F5D547]"><a href="">Register Your Brand</a></span>
+      </li>&nbsp;&nbsp;
+      <li class="dropdown inline-block relative  border-r-2">
+        <button class="bg-transparent rounded inline-flex items-center">
+          <span class="mr-1 text-white hover:text-[#F5D547]"><a href="">Deals</a></span>
+          <svg class="fill-current h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+        </button>
+        <ul class="dropdown-menu absolute hidden pt-1 bg-white">
+          <li class=""><a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#">Deals1</a></li>
+          <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">deal2</a></li>
+          <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Deal3</a></li>
+        </ul>
+      </li>&nbsp;&nbsp;
+      <svg width="19" height="25" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.76945 0.67627C4.8538 0.678802 4.93858 0.683868 5.02293 0.683868C9.07779 0.68429 13.1326 0.685134 17.1875 0.683446C17.7229 0.683023 18.1819 0.853136 18.5486 1.2495C18.8326 1.55638 18.9784 1.92025 18.9987 2.33519C19.0009 2.3774 18.9996 2.41961 18.9996 2.46182C18.9996 5.48671 18.9987 8.51159 19 11.5365C19.0004 12.23 18.7003 12.7513 18.1018 13.0992C17.8212 13.2625 17.5105 13.3153 17.1871 13.3149C15.2092 13.3132 13.231 13.314 11.2532 13.314C9.16935 13.314 7.08512 13.314 5.00131 13.3144C4.92374 13.3144 4.8466 13.3195 4.76902 13.3225C4.76097 13.2465 4.74656 13.1705 4.74656 13.0941C4.74529 9.0308 4.74529 4.9675 4.74656 0.904212C4.74698 0.828231 4.7614 0.75225 4.76945 0.67627ZM9.79415 3.45506C9.76151 3.45928 9.72294 3.45422 9.69665 3.46941C8.46231 4.18279 7.76757 5.24737 7.63235 6.66146C7.57979 7.21232 7.6599 7.75263 7.84387 8.27816C8.4958 10.141 10.4342 11.287 12.4447 10.8666C13.6243 10.6196 14.5162 9.9489 15.1198 8.90585C15.141 8.86913 15.152 8.82607 15.1724 8.77457C15.1431 8.78048 15.1346 8.78006 15.1291 8.78386C15.1007 8.80412 15.0723 8.8248 15.0448 8.84633C14.0245 9.64709 12.8847 9.90289 11.627 9.56646C10.1612 9.17432 8.95529 7.8666 8.87093 6.1144C8.82558 5.17434 9.11424 4.32926 9.70683 3.59098C9.74031 3.54919 9.76363 3.49896 9.7916 3.45253C9.8039 3.44451 9.81619 3.43691 9.82848 3.42889C9.8234 3.42551 9.81831 3.42214 9.81322 3.41876C9.80644 3.431 9.80008 3.44324 9.79415 3.45506ZM13.384 3.60956C13.373 3.61504 13.3615 3.62095 13.3505 3.62644C13.3878 3.89913 13.4251 4.17224 13.4637 4.45632C13.2123 4.59182 12.9665 4.72437 12.6765 4.88055C12.9966 4.93838 13.2691 4.98734 13.5553 5.03884C13.6061 5.31871 13.6566 5.59561 13.7155 5.9198C13.8715 5.62938 14.0058 5.37949 14.1372 5.13424C14.4234 5.14268 14.6832 5.24779 14.988 5.21107C14.7773 4.99072 14.5904 4.79528 14.4094 4.60575C14.5209 4.33897 14.6713 4.11188 14.7769 3.81217C14.4874 3.95189 14.2441 4.06924 13.9893 4.19208C13.785 3.99579 13.5845 3.80246 13.384 3.60956Z" fill="#014610"/>
+        <path d="M4.7692 0.676349C4.76157 0.75233 4.74674 0.828734 4.74674 0.904714C4.74547 4.96801 4.74547 9.0313 4.74674 13.0946C4.74674 13.1706 4.76157 13.2466 4.7692 13.323C4.38093 13.3259 3.99265 13.3301 3.60438 13.331C3.03934 13.3322 2.47431 13.3373 1.90969 13.3284C1.64604 13.3242 1.38111 13.3035 1.13018 13.206C0.571923 12.9895 0.204841 12.5978 0.0450373 12.022C0.0119745 11.9034 0.00180129 11.7751 0.00180129 11.6514C-0.000318121 8.53616 -0.000318121 5.42052 0.000529643 2.3053C0.000529643 1.9026 0.159485 1.56406 0.431194 1.27153C0.668568 1.01573 0.938157 0.812693 1.28998 0.745999C1.45996 0.713496 1.63205 0.67255 1.80372 0.671284C2.76424 0.664108 3.72433 0.667907 4.68485 0.668751C4.71283 0.668751 4.7408 0.673395 4.7692 0.676349Z" fill="#EFEFEF"/>
+        <path d="M9.79083 3.45264C9.76285 3.49907 9.73954 3.5493 9.70605 3.59109C9.11346 4.32937 8.8248 5.17487 8.87016 6.1145C8.95451 7.86671 10.1609 9.17442 11.6262 9.56657C12.8839 9.903 14.0237 9.64677 15.044 8.84644C15.0716 8.82491 15.1 8.80423 15.1284 8.78397C15.1334 8.78017 15.1419 8.78059 15.1716 8.77468C15.1512 8.82618 15.1406 8.86881 15.119 8.90596C14.5154 9.94943 13.6236 10.6202 12.4439 10.8667C10.4334 11.2871 8.49502 10.1415 7.84309 8.27827C7.65912 7.75316 7.57901 7.21243 7.63157 6.66157C7.76679 5.24705 8.46153 4.18248 9.69588 3.46952C9.72216 3.45433 9.76073 3.45939 9.79337 3.45517L9.79083 3.45264Z" fill="#EEEFEF"/>
+        <path d="M13.3837 3.60986C13.5842 3.80319 13.7847 3.9961 13.989 4.19281C14.2438 4.06997 14.4871 3.95262 14.7766 3.8129C14.6711 4.1126 14.5206 4.3397 14.4091 4.60648C14.5901 4.79559 14.7775 4.99145 14.9877 5.2118C14.6829 5.2481 14.4235 5.14299 14.137 5.13497C14.0051 5.38022 13.8708 5.63053 13.7152 5.92053C13.6563 5.59634 13.6058 5.31943 13.555 5.03957C13.2689 4.98807 12.9959 4.93869 12.6763 4.88128C12.9662 4.72509 13.2121 4.59255 13.4634 4.45705C13.4248 4.17297 13.3875 3.89986 13.3502 3.62717C13.3613 3.62126 13.3723 3.61535 13.3837 3.60986Z" fill="#E9ECEA"/>
+        <path d="M9.79398 3.45525C9.80034 3.44301 9.80628 3.43119 9.81263 3.41895C9.81772 3.42232 9.82281 3.4257 9.82789 3.42908C9.8156 3.4371 9.80331 3.44469 9.79102 3.45271L9.79398 3.45525Z" fill="#EEEFEF"/>
+        </svg>
+        
+      <li class="dropdown inline-block relative">
+        <button class="bg-transparent rounded inline-flex items-center">
+          <span class="mr-1 text-white hover:text-[#F5D547]"><a href="">/ &nbsp;English / &nbsp;USD</a></span>
+          <svg class="fill-current h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+        </button>
+        <ul class="dropdown-menu absolute hidden pt-1 bg-white">
+          <li class=""><a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#">Deals1</a></li>
+          <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">deal2</a></li>
+          <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Deal3</a></li>
+        </ul>
+      </li>&nbsp;&nbsp;
+      <li class="dropdown inline-block relative">
+        <button class="bg-transparent rounded inline-flex items-center">
+          <span class="mr-1 text-white hover:text-[#F5D547]"><a href="">Help</a></span>
+          <svg class="fill-current h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+        </button>
+        <ul class="dropdown-menu absolute hidden pt-1 bg-white">
+          <li class=""><a class="rounded-t py-2 px-4 block whitespace-no-wrap" href="#">Help1</a></li>
+          <li class=""><a class="py-2 px-4 block whitespace-no-wrap" href="#">Help2</a></li>
+          <li class=""><a class="rounded-b py-2 px-4 block whitespace-no-wrap" href="#">Help3</a></li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+</header>
+    <!-- navbar starts -->
+<header class="px-12 pt-4 container">
+<nav class="flex flex-wrap items-center justify-between w-full md:py-0">
+  <div>
+    <a href="#">
+      <img src="assests/images/joybox-logo.png">
+    </a>
+  </div>
+  <a href="#">
+    <svg xmlns="<http://www.w3.org/2000/svg>" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </a>
+  <div class="hidden w-full md:flex md:items-center md:w-auto " id="menu">
+      <ul
+        class="text-base text-gray-700 pt-4 md:flex md:justify-between md:pt-0">
+        
+        <li>
+          <form action="#" class="max-w-[480px] w-full px-4">
+            <div class="relative">
+                <input type="text" name="q" class="w-60 bg-gray-300 border h-12 p-4 rounded-full" placeholder="What are searching for ?">
+                <button type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F14530" class="bi bi-crosshair h-5 w-5 absolute top-3.5 right-3" viewBox="0 0 16 16">
+                    <path d="M8.5.5a.5.5 0 0 0-1 0v.518A7 7 0 0 0 1.018 7.5H.5a.5.5 0 0 0 0 1h.518A7 7 0 0 0 7.5 14.982v.518a.5.5 0 0 0 1 0v-.518A7 7 0 0 0 14.982 8.5h.518a.5.5 0 0 0 0-1h-.518A7 7 0 0 0 8.5 1.018zm-6.48 7A6 6 0 0 1 7.5 2.02v.48a.5.5 0 0 0 1 0v-.48a6 6 0 0 1 5.48 5.48h-.48a.5.5 0 0 0 0 1h.48a6 6 0 0 1-5.48 5.48v-.48a.5.5 0 0 0-1 0v.48A6 6 0 0 1 2.02 8.5h.48a.5.5 0 0 0 0-1zM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                  </svg>
+                </button>
+            </div>
+        </form>
+        </li>
+      <li>
+        <a
+          class="md:p-4 py-2 block hover:text-[#F5D547]"
+          href="#"
+          >Maps</a
+        >
+      </li>
+       <li>
+          <a
+            class="md:p-4 py-2 block"
+            href="#"
+            ><i class="bi bi-toggle-on hover:text-[#F5D547]"></i></a
+          >
+        </li>
+        <li>
+          <a class="md:p-4 py-2 block hover:text-[#F5D547]" href="#"
+            ><i class="bi bi-person-circle"></i>&nbsp; Hi , Ali</a
+          >
+        </li>
+        <li>
+          <a class="md:p-4 py-2 block hover:text-[#F5D547]" href="#"
+            ><i class="bi bi-basket"></i></a
+          >
+        </li>
+        <li>
+          <a 
+            class="md:p-4 py-2 block hover:text-[#F5D547]"
+            href="#"
+            ><i class="bi bi-wallet2"></i></a
+          >
+        </li>
+      </ul>
+    </div>
+</nav>
+</header>
+  <!-- navbar ends -->
+<!-- Slider category starts -->
+  <div class="wrapper container">
+    <ul class="tabs-box">
+      <li class="tab">Region</li>
+      <li class="tab active">Fast Food</li>
+      <li class="tab">Tags</li>
+      <li class="tab">Price range</li>
+      <li class="tab">Open now</li>
+      <li class="tab">Most viewed</li>
+      <li class="tab">Newest</li>
+      <li class="tab">Recommended</li>
+      <li class="tab">Rating</li>
+      <li class="tab">Discount</li>
+      <li class="tab">Near by me</li>
+      <li class="tab">Reviews</li>
+      <li class="tab">Delicious</li>
+      <li class="tab">Urgent</li>
+    </ul>
+   </div>
+<!-- Slider category ends -->
+<!-- Cards Starts -->
+<div class="container mt-100 px-12">
+  <div class="row">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+  <div class="card mb-30 bg-[#E8E8E8] hover:bg-[#F5D547]  rounded-bl-[210px] mt-[80px]"><a class="card-img-tiles" href="#" data-abc="true">
+  <div class="inner">
+  <div class="main-img"><img class="mt-[-120px]" src="assests/images/burger.png" alt="Category"></div>
+  </div></a>
+  <div class="card-body px-12">
+  <h1 class="card-title">McDonald's</h1>
+  <p class="text-muted">DHA Phase 8</p>
+  <div class="flex">
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+  </div>
+  <div class="py-3 flex">
+    <div class="w-6 bg-[#F14530] text-center rounded">
+      <i class="bi bi-basket"></i>
+    </div>
+    <div class="ml-auto flex">
+      <p><strike>Rs.900</strike></p>
+      &nbsp;
+      <p class="font-bold text-xl">Rs.599</p>
+    </div>
+  </div>
+  </div>
+  <div class="ml-auto bg-[#F14530] w-20 h-8 text-center text-white font-bold text-xl">
+    <p>Open</p>
+  </div>
+  <br>
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+<div class="card mb-30 bg-[#E8E8E8] hover:bg-[#F5D547]  rounded-bl-[210px] mt-[80px]"><a class="card-img-tiles" href="#" data-abc="true">
+<div class="inner">
+<div class="main-img"><img class="mt-[-120px]" src="assests/images/burger.png" alt="Category"></div>
+</div></a>
+<div class="card-body px-12">
+<h1 class="card-title">McDonald's</h1>
+<p class="text-muted">DHA Phase 8</p>
+<div class="flex">
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star"></i>
+  <i class="bi bi-star"></i>
+</div>
+<div class="py-3 flex">
+  <div class="w-6 bg-[#F14530] text-center rounded">
+    <i class="bi bi-basket"></i>
+  </div>
+  <div class="ml-auto flex">
+    <p><strike>Rs.900</strike></p>
+    &nbsp;
+    <p class="font-bold text-xl">Rs.599</p>
+  </div>
+</div>
+</div>
+<div class="ml-auto bg-[#F14530] w-20 h-8 text-center text-white font-bold text-xl">
+  <p>Open</p>
+</div>
+<br>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+  <div class="card mb-30 bg-[#E8E8E8] hover:bg-[#F5D547]  rounded-bl-[210px] mt-[80px]"><a class="card-img-tiles" href="#" data-abc="true">
+  <div class="inner">
+  <div class="main-img"><img class="mt-[-120px]" src="assests/images/burger.png" alt="Category"></div>
+  </div></a>
+  <div class="card-body px-12">
+  <h1 class="card-title">McDonald's</h1>
+  <p class="text-muted">DHA Phase 8</p>
+  <div class="flex">
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+  </div>
+  <div class="py-3 flex">
+    <div class="w-6 bg-[#F14530] text-center rounded">
+      <i class="bi bi-basket"></i>
+    </div>
+    <div class="ml-auto flex">
+      <p><strike>Rs.900</strike></p>
+      &nbsp;
+      <p class="font-bold text-xl">Rs.599</p>
+    </div>
+  </div>
+  </div>
+  <div class="ml-auto bg-[#F14530] w-20 h-8 text-center text-white font-bold text-xl">
+    <p>Open</p>
+  </div>
+  <br>
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+    <div class="card mb-30 bg-[#E8E8E8] hover:bg-[#F5D547] rounded-bl-[210px] mt-[80px]"><a class="card-img-tiles" href="#" data-abc="true">
+    <div class="inner">
+    <div class="main-img"><img class="mt-[-120px]" src="assests/images/burger.png" alt="Category"></div>
+    </div></a>
+    <div class="card-body px-12">
+    <h1 class="card-title">McDonald's</h1>
+    <p class="text-muted">DHA Phase 8</p>
+    <div class="flex">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+    </div>
+    <div class="py-3 flex">
+      <div class="w-6 bg-[#F14530] text-center rounded">
+        <i class="bi bi-basket"></i>
+      </div>
+      <div class="ml-auto flex">
+        <p><strike>Rs.900</strike></p>
+        &nbsp;
+        <p class="font-bold text-xl">Rs.599</p>
+      </div>
+    </div>
+    </div>
+    <div class="ml-auto bg-[#F14530] w-20 h-8 text-center text-white font-bold text-xl">
+      <p>Open</p>
+    </div>
+    <br>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+      <div class="card mb-30 bg-[#E8E8E8] hover:bg-[#F5D547]  rounded-bl-[210px] mt-[80px]"><a class="card-img-tiles" href="#" data-abc="true">
+      <div class="inner">
+      <div class="main-img"><img class="mt-[-120px]" src="assests/images/burger.png" alt="Category"></div>
+      </div></a>
+      <div class="card-body px-12">
+      <h1 class="card-title">McDonald's</h1>
+      <p class="text-muted">DHA Phase 8</p>
+      <div class="flex">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+    </div>
+    <div class="py-3 flex">
+      <div class="w-6 bg-[#F14530] text-center rounded">
+        <i class="bi bi-basket"></i>
+      </div>
+      <div class="ml-auto flex">
+        <p><strike>Rs.900</strike></p>
+        &nbsp;
+        <p class="font-bold text-xl">Rs.599</p>
+      </div>
+    </div>
+    </div>
+    <div class="ml-auto bg-[#F14530] w-20 h-8 text-center text-white font-bold text-xl">
+      <p>Open</p>
+    </div>
+    <br>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+<div class="card mb-30 bg-[#E8E8E8] hover:bg-[#F5D547]  rounded-bl-[210px] mt-[80px]"><a class="card-img-tiles" href="#" data-abc="true">
+<div class="inner">
+<div class="main-img"><img class="mt-[-120px]" src="assests/images/burger.png" alt="Category"></div>
+</div></a>
+<div class="card-body px-12">
+<h1 class="card-title">McDonald's</h1>
+<p class="text-muted">DHA Phase 8</p>
+<div class="flex">
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star"></i>
+  <i class="bi bi-star"></i>
+</div>
+<div class="py-3 flex">
+  <div class="w-6 bg-[#F14530] text-center rounded">
+    <i class="bi bi-basket"></i>
+  </div>
+  <div class="ml-auto flex">
+    <p><strike>Rs.900</strike></p>
+    &nbsp;
+    <p class="font-bold text-xl">Rs.599</p>
+  </div>
+</div>
+</div>
+<div class="ml-auto bg-[#F14530] w-20 h-8 text-center text-white font-bold text-xl">
+  <p>Open</p>
+</div>
+<br>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+  <div class="card mb-30 bg-[#E8E8E8] hover:bg-[#F5D547]  rounded-bl-[210px] mt-[80px]"><a class="card-img-tiles" href="#" data-abc="true">
+  <div class="inner">
+  <div class="main-img"><img class="mt-[-120px]" src="assests/images/burger.png" alt="Category"></div>
+  </div></a>
+  <div class="card-body px-12">
+  <h1 class="card-title">McDonald's</h1>
+  <p class="text-muted">DHA Phase 8</p>
+  <div class="flex">
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+  </div>
+  <div class="py-3 flex">
+    <div class="w-6 bg-[#F14530] text-center rounded">
+      <i class="bi bi-basket"></i>
+    </div>
+    <div class="ml-auto flex">
+      <p><strike>Rs.900</strike></p>
+      &nbsp;
+      <p class="font-bold text-xl">Rs.599</p>
+    </div>
+  </div>
+  </div>
+  <div class="ml-auto bg-[#F14530] w-20 h-8 text-center text-white font-bold text-xl">
+    <p>Open</p>
+  </div>
+  <br>
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+    <div class="card mb-30 bg-[#E8E8E8] hover:bg-[#F5D547]  rounded-bl-[210px] mt-[80px]"><a class="card-img-tiles" href="#" data-abc="true">
+    <div class="inner">
+    <div class="main-img"><img class="mt-[-120px]" src="assests/images/burger.png" alt="Category"></div>
+    </div></a>
+    <div class="card-body px-12">
+    <h1 class="card-title">McDonald's</h1>
+    <p class="text-muted">DHA Phase 8</p>
+    <div class="flex">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+    </div>
+    <div class="py-3 flex">
+      <div class="w-6 bg-[#F14530] text-center rounded">
+        <i class="bi bi-basket"></i>
+      </div>
+      <div class="ml-auto flex">
+        <p><strike>Rs.900</strike></p>
+        &nbsp;
+        <p class="font-bold text-xl">Rs.599</p>
+      </div>
+    </div>
+    </div>
+    <div class="ml-auto bg-[#F14530] w-20 h-8 text-center text-white font-bold text-xl">
+      <p>Open</p>
+    </div>
+    <br>
+    </div>
+    </div>  
+</div>
+</div>
+<!-- Cards ends -->
+<br>
+<div class="px-[120px] py-10">
+  <!-- Footer -->
+ <footer>
+    <div class="w-full h-auto flex justify-center bg-[url(/assests/images/map.png)] bg-no-repeat">
+      <form class="text-center bg-[#F5F5F5] rounded-[14px] py-3 w-[320px] translate-y-6 mt-[-45px]">
+        <h4 class="text-lg font-semibold">Contact Us</h4>
+        <input type="hidden" name="frontend" value="true">
+        <div class="mb-4">
+          <input type="text" name="name" class="px-3 h-12 rounded-full bg-[#D9D9D9]" placeholder="Name" value="" required>
+        </div>
+        <div class="mb-4">
+          <input type="email" name="email" class="px-3 h-12 rounded-full bg-[#D9D9D9]" placeholder="Email" value="" required>
+        </div>
+        <div class="mb-4">
+          <input type="tel" minlength="11" name="number" class="px-3 h-12 bg-[#D9D9D9] rounded-full" placeholder="Contact" required>
+        </div>
+        <div class="mb-4">
+          <textarea id="w3review" name="message" rows="4" class="form-textarea w-[200px] px-3 rounded-[20px] bg-[#D9D9D9]" placeholder="Message" required></textarea>
+        </div>
+
+        <button type="submit"
+          class="block text-center text-white font-semibold bg-golden-yellow py-2 px-6 rounded-full bg-yellow-500 mr-auto ml-auto">
+          Submit
+        </button>
+      </form>
+    </div>
+    <div class="bg-[url(assests/images/footer-yellowbg.png)] bg-no-repeat px-12 py-10 bg-cover">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <img src="assests/images/company-blacklogo.svg">
+          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic typesetting,</p>
+          <p class="text-sm">
+            remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <div>
+            <a><img src="assests/images/social.svg"></a>
+          </div>
+        </div>
+        <div>
+          <img src="assests/images/footer-logo.png">
+        </div>
+      </div>
+      <div>
+        <p class="text-sm text-center mt-4">© 2023 JOYBOX</p>
+      </div>
+    </div>
+</footer>
+<!-- Footer -->
+</div>
+<script src="assests/js/scripit.js"></script>
+</body>
+</html>
